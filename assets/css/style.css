@@ -1,0 +1,12 @@
+﻿body {
+}
+#banner {
+    background-image: url('../../images/banner.jpg');
+}
+.image:before{
+    background-image:none !important;
+}
+
+.spotlight:before {
+    background-image: none;
+}

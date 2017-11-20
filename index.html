@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -22,13 +24,14 @@
 					<h1 id="logo"><a href="index.html"></a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html" class="scrolly">Home</a></li>
+                            <li><a href="#one">About</a></li>
 							<li>
-								<a href="#">Layouts</a>
+								<a href="#">Projects</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="#two" class="scrolly" style="display: block;">Bank Account</a></li>
+                                    <li><a href="#three">Tuscany Villa</a></li>
+									<li><a href="#four">Wardrobe</a></li>
 									<li>
 										<a href="#">Submenu</a>
 										<ul>
@@ -40,8 +43,10 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button special">Sign Up</a></li>
+                            <!--<li><a href="#two">Console Application</a></li>
+							<li><a href="#three">Web Design</a></li>
+                            <li><a href="#four">Web Application</a></li>-->
+							<li><a href="#" class="button special">Connect</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -52,38 +57,37 @@
 						<header>
 							<h2>Sonja Smith</h2>
 							<p>junior software developer | ux/ui designer <br />
-							Where back end meets front end.</p>
+							Cleveland, Ohio</p>
 						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+						<span class="image"><img src="images/profile photo.jpg" alt="Sonja Smith" /></span>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+				<section id="one" class="spotlight style1 bottom" style="background-position: center 74.25px; background-image: url('images/desk.jpg');">
+					<span class="image fit main">
+                    <img src="images/desk.jpg" alt="books" />
+                    </span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
 								<div class="4u 12u$(medium)">
 									<header>
-										<h2>Odio faucibus ipsum integer consequat</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+										<h2>Hi there! My name is Sonja and I'm a software developer | ui/ux designer from Cleveland, Ohio.</h2>
+										<p></p>
 									</header>
 								</div>
 								<div class="4u 12u$(medium)">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+									<p>I'm a software developer apprentice at We Can Code IT full-stack developer's bootcamp. I'm eager to
+                                    begin my new career with the addition of my current skills as a graphic designer. I already see how planning, problem solving, and communicating with end-users will carry over
+                                    as a developer.</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+									<p>I have a graphic design background with a Visual Communications Design Degree from Kent State University.
+                                       I knew a few years ago that I wanted to dive my nose into coding, I just wasn't sure how until I came across
+                                       We Can Code IT bootcamp by attending local coding meetups. 
+                                    </p>
 								</div>
 							</div>
 						</div>
@@ -92,62 +96,127 @@
 				</section>
 
 			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+				<section id="two" class="spotlight style2 right" style="background-position: center 19.2px; background-image: url('images/bank account.jpg');">
+					<span class="image fit main"><img src="images/bank account.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+							<h2>Bank Account</h2>
+							<p>Console Application</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+						<p>Designed a console application to manage a client's bank account.</p>
+                        <p>Skills Used:</p>
+                        <ul>
+                            <li>OOP</li>
+                            <li>Inheritance</li>
+                            <li>Polymorphism</li>
+                        </ul>        
+                        <ul class="actions">
+                            <li>
+                                <a href="https://github.com/sonjasmith/bankaccounttest" target="_blank" class="button">
+                                    <span class="icon alt fa-github lg-github"></span>
+                                    <span id="githubText">&nbsp; Github</span>
+                                </a>
+                            </li>
+                        </ul>                    
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
-						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</div>
+				<section id="three" class="spotlight style3 left" style="background-position: center 19.2px; background-image: url('images/Tuscany Villa.png');"> 
+					<span class="image fit main bottom"><img src="images/Tuscany Villa.png" alt="" /></span>
+                    <div class="content">
+                        <header>
+                            <h2>Tuscany Villa</h2>
+                            <p>Front end Web Design</p>
+                        </header>
+                        <p>Designed a replica from a mock-up of Tuscany's home page.</p>
+                        <p>Skills Used:</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <ul class="actions">
+                            <li>
+                                <a href="https://github.com/sonjasmith/TuscanyVilla" target="_blank" class="button">
+                                    <span class="icon alt fa-github lg-github"></span>
+                                    <span id="githubText">&nbsp; Github</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 					<a href="#four" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+            <!-- Four -->
+            <section id="four" class="spotlight style2 right" style="background-position: center 19.2px; background-image: url('images/wardrobe.jpg');">
+                <span class="image fit main"><img src="images/wardrobe.jpg" alt="" /></span>
+                <div class="content">
+                    <header>
+                        <h2>Wardrobe</h2>
+                        <p>Database First MVC</p>
+                    </header>
+                    <p>Designed a web application to manage my closet.</p>
+                    <p>Skills Used:</p>
+                    <ul>
+                        <li>MVC</li>
+                        <li>mySQL</li>
+                        <li>C#</li>
+                    </ul>
+                    <ul class="actions">
+                        <li>
+                            <a href="https://github.com/sonjasmith/WardrobeMVC" target="_blank" class="button">
+                                <span class="icon alt fa-github lg-github"></span>
+                                <span id="githubText">&nbsp; Github</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#five" class="goto-next scrolly">Next</a>
+            </section>
+
+
+			<!-- Five -->
+				<section id="five" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>Skills</h2>
+							<p></p>
 						</header>
 						<div class="box alt">
 							<div class="row uniform">
-								<section class="4u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa-area-chart"></span>
-									<h3>Ipsum sed commodo</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-								</section>
+                                <section class="4u 6u(medium) 12u$(xsmall)">
+                                    <span class="icon alt major fa-area-chart"></span>
+                                    <h3>Development</h3>
+                                    <p>
+                                        C#<br>
+                                        MVC<br>
+                                        OOP<br>
+                                        SQL<br>
+                                    </p>
+                                </section>
 								<section class="4u 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-comment"></span>
-									<h3>Eleifend lorem ornare</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                                    <h3>Web Design</h3>
+                                    <p>
+                                        HTML5<br>
+                                        CSS3<br>
+                                        Bootstrap<br>
+                                        JavaScript<br>
+                                        jQuery<br>
+                                    </p>
 								</section>
 								<section class="4u$ 6u(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                                    <h3>Software</h3>
+                                    <p>
+                                        Visual Studio<br>
+                                        Adobe Creative Cloud<br>
+                                        MS SQL Server Management Studio<br>
+                                    </p>
 								</section>
-								<section class="4u 6u$(medium) 12u$(xsmall)">
+								<!--<section class="4u 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-paper-plane"></span>
 									<h3>Non semper interdum</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
@@ -161,23 +230,23 @@
 									<span class="icon alt major fa-lock"></span>
 									<h3>Massa arcu accumsan</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-								</section>
+								</section>-->
 							</div>
 						</div>
 						<footer class="major">
 							<ul class="actions">
-								<li><a href="#" class="button">Magna sed feugiat</a></li>
+								<li><a href="#" class="button">Home</a></li>
 							</ul>
 						</footer>
 					</div>
 				</section>
 
-			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+			<!-- Six -->
+				<section id="six" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+							<h2>Let's Connect!</h2>
+							<p>I would love to expand upon my background.</p>
 						</header>
 						<form method="post" action="#" class="container 50%">
 							<div class="row uniform 50%">
@@ -191,15 +260,12 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/sonjasmithjrdev/" target="_blank" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/sonjasmith" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope" target="_blank"> <span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Sonja Smith 2017. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
